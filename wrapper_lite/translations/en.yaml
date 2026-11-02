@@ -1,0 +1,12 @@
+configuration:
+  username:
+    name: Apple ID
+    description: The Apple ID of your Apple Music subscription.
+  password:
+    name: Password
+    description: The password of that Apple ID.
+  code:
+    name: Two-factor code
+    description: >-
+      Only needed for the first sign-in. Generate one on your iPhone (Settings, your name,
+      Sign-In & Security, Get Verification Code), paste it here and start the add-on.
