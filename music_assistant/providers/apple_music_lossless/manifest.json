@@ -1,0 +1,19 @@
+{
+  "type": "music",
+  "domain": "apple_music_lossless",
+  "stage": "experimental",
+  "name": "Apple Music Lossless",
+  "description": "Stream Apple Music in lossless ALAC, decrypted in memory via a wrapper-lite instance.",
+  "codeowners": [
+    "@x3n0n10"
+  ],
+  "credits": [
+    "[apple-music-downloader](https://github.com/zhaarey/apple-music-downloader)",
+    "[Temari](https://github.com/WorldObservationLog/Temari)",
+    "[wrapper-lite](https://github.com/WorldObservationLog/wrapper/tree/lite)"
+  ],
+  "requirements": [
+    "pywidevine==1.9.0"
+  ],
+  "multi_instance": true
+}

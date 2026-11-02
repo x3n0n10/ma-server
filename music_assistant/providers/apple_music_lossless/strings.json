@@ -1,0 +1,38 @@
+{
+  "config_entries": {
+    "music_app_token": {
+      "label": "MusicKit App Token"
+    },
+    "music_user_manual_token": {
+      "label": "Manual Music User Token"
+    },
+    "lite_server": {
+      "label": "wrapper-lite server URL",
+      "description": "HTTP endpoint of a running wrapper-lite instance (https://github.com/WorldObservationLog/wrapper/tree/lite), for example http://127.0.0.1:12340. It is signed in to your Apple Music account and hands out the lossless playlists and decryption keys."
+    },
+    "alac_max": {
+      "label": "Maximum lossless sample rate",
+      "description": "Highest ALAC sample rate to stream. Hi-Res (96 and 192 kHz) needs much more bandwidth and decryption work."
+    }
+  },
+  "setup_flow": {
+    "app_token": {
+      "title": "Enter a developer token",
+      "description": "The bundled Apple Music developer token is unavailable or expired. Paste a valid MusicKit developer token to continue."
+    },
+    "user": {
+      "title": "Sign in to Apple Music",
+      "description": "Continue to sign in with your Apple ID in a browser window. Advanced users can instead paste a Music User Token, for example for child accounts where the browser sign-in is unavailable."
+    },
+    "auth": {
+      "title": "Authorize Music Assistant",
+      "description": "Sign in with your Apple ID in the window that opens to grant Music Assistant access."
+    },
+    "abort": {
+      "auth_cancelled": "Sign-in was cancelled or timed out before Apple returned a token. Please try again."
+    }
+  },
+  "manifest": {
+    "description": "Stream Apple Music in lossless ALAC, decrypted in memory via a wrapper-lite instance."
+  }
+}
