@@ -6,7 +6,7 @@ ARG WRAPPER_REF
 SHELL ["/bin/bash", "-c"]
 WORKDIR /app
 RUN apt-get update && apt-get install -y --no-install-recommends \
-        build-essential cmake unzip git wget ca-certificates lsb-release gnupg software-properties-common \
+        build-essential cmake unzip git wget ca-certificates lsb-release gnupg \
     && bash -c "$(wget -qO - https://apt.llvm.org/llvm.sh)" \
     && rm -rf /var/lib/apt/lists/*
 RUN wget -q https://dl.google.com/android/repository/android-ndk-r23b-linux.zip \

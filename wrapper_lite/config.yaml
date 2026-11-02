@@ -1,5 +1,5 @@
 name: wrapper-lite
-version: "0.1.0"
+version: "0.1.1"
 slug: wrapper_lite
 description: Apple Music key service for the Apple Music Lossless provider in Music Assistant.
 url: https://github.com/WorldObservationLog/wrapper/tree/lite
